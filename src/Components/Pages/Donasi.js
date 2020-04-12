@@ -243,6 +243,7 @@ const styles = {
     background: "#fff",
     marginTop: "18vh",
     paddingTop: "2vh",
+    paddingBottom: "2vh",
   },
   title: {
     color: "#fff",

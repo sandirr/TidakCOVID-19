@@ -44,7 +44,12 @@ export default class Tentang extends React.Component {
         </header>
 
         <div
-          style={{ marginTop: "18vh", paddingTop: "2vh", background: "#fff" }}
+          style={{
+            marginTop: "18vh",
+            paddingTop: "2vh",
+            background: "#fff",
+            paddingBottom: "2vh",
+          }}
           className="tentang"
         >
           <div className="container">
@@ -658,7 +663,7 @@ export default class Tentang extends React.Component {
           </div>
         </div>
 
-        <div className="bg-light pt-4 mt-4">
+        <div className="bg-light pt-4 mt-0">
           <div className="container">
             <div className="row">
               <div className="col-lg-8">

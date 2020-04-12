@@ -87,6 +87,7 @@ export default class PeriksaMandiri extends React.Component {
           style={{
             marginTop: "18vh",
             paddingTop: "2vh",
+            paddingBottom: "2vh",
             background: "#fff",
           }}
         >
@@ -209,7 +210,7 @@ export default class PeriksaMandiri extends React.Component {
           </div>
         </div>
 
-        <div className="bg-light pt-4 mt-4">
+        <div className="bg-light pt-4 mt-0">
           <div className="container">
             <div className="row">
               <div className="col-lg-8">

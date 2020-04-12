@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import TopNav from "../Navs/TopNav";
+import Footer from "../Footer";
 
 class Home extends React.Component {
   constructor(props) {
@@ -143,6 +144,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+        <Footer />
       </Fragment>
     );
   }
@@ -151,7 +153,7 @@ class Home extends React.Component {
 const styles = {
   container: {
     background: "#fff",
-    minHeight: "80vh",
+    minHeight: "74vh",
     marginTop: "18vh",
     paddingTop: "2vh",
   },

@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import TopNav from "../Navs/TopNav";
+import Footer from "../Footer";
 
 class Donasi extends React.Component {
   changePage = (page) => {
@@ -133,7 +134,7 @@ class Donasi extends React.Component {
           </div>
         </div>
 
-        <div className="bg-light py-4">
+        <div className="bg-light pt-4">
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
@@ -247,6 +248,7 @@ class Donasi extends React.Component {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </Fragment>
     );

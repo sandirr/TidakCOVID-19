@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import TopNav from "../Navs/TopNav";
 import data from "./RS";
+import Footer from "../Footer";
 
 export default class Tentang extends React.Component {
   goMap = (e) => {
@@ -656,7 +657,7 @@ export default class Tentang extends React.Component {
           </div>
         </div>
 
-        <div className="bg-light py-4 mt-4">
+        <div className="bg-light pt-4 mt-4">
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
@@ -730,6 +731,7 @@ export default class Tentang extends React.Component {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </Fragment>
     );

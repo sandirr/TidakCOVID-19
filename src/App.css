@@ -25,7 +25,7 @@ html {
 #navUtama .navbar-brand {
   transition: 0.5s;
   color: #fff;
-  text-shadow: 1px 1px 3px grey;
+  text-shadow: 1px 1px 2px #c3c3c3;
 }
 
 #navUtama .nav-item:hover .nav-link {

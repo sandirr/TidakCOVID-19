@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import TopNav from "../Navs/TopNav";
+import Footer from "../Footer";
 
 export default class PeriksaMandiri extends React.Component {
   constructor(props) {
@@ -207,7 +208,7 @@ export default class PeriksaMandiri extends React.Component {
           </div>
         </div>
 
-        <div className="bg-light py-4 mt-4">
+        <div className="bg-light pt-4 mt-4">
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
@@ -282,6 +283,7 @@ export default class PeriksaMandiri extends React.Component {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </Fragment>
     );

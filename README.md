@@ -1,5 +1,25 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# TidakCovid-19
+
+## Start
+
+```
+git clone https://github.com/sandirr/TidakCOVID-19.git
+cd TidakCOVID19
+npm install
+```
+
+## Dependencies
+
+```
+    "firebase-tools": "^8.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1"
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +86,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Screenshot
+
+![screencapture-tidakcovid-19-web-app-2020-04-13-00_45_55](https://user-images.githubusercontent.com/50796200/79075966-6aa75c80-7d20-11ea-9453-af065b11b989.png)
+<br/>
+![screencapture-tidakcovid-19-web-app-tentang-2020-04-13-00_46_12](https://user-images.githubusercontent.com/50796200/79075967-6c712000-7d20-11ea-85be-9b95d023ab83.png)
+<br/>
+![screencapture-tidakcovid-19-web-app-periksa-mandiri-2020-04-13-00_46_27](https://user-images.githubusercontent.com/50796200/79075968-6da24d00-7d20-11ea-9513-07a0b63f3cb4.png)
+<br/>
+![screencapture-tidakcovid-19-web-app-peta-statistik-2020-04-13-00_46_54](https://user-images.githubusercontent.com/50796200/79075969-6e3ae380-7d20-11ea-97ee-ab15291ea959.png)
+![screencapture-tidakcovid-19-web-app-donasi-2020-04-13-00_47_05](https://user-images.githubusercontent.com/50796200/79075970-7004a700-7d20-11ea-8e1f-8d3cbaea4774.png)

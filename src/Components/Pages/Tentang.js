@@ -655,6 +655,82 @@ export default class Tentang extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className="bg-light py-4 mt-4">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8">
+                <div style={{ textAlign: "center" }}>
+                  <h3 style={{ fontWeight: "bold" }}>Kutipan</h3>
+                </div>
+                <div className="row">
+                  <div className="col-lg-12 col-sm-12">
+                    <div
+                      className="card mb-3 bg-light"
+                      style={{ border: "none" }}
+                    >
+                      <div className="row no-gutters">
+                        <div
+                          className="col-md-3"
+                          style={{ textAlign: "center" }}
+                        >
+                          <img
+                            src="https://suaratani.com/wp-content/uploads/2020/03/DR.dr_.-Erlina-Burhan-MSc-Sp.PK-anggota-Tim-Medis-Covid-19-dan-Jubir-RS-Persahabatan-untuk-Covid-19.jpeg"
+                            className="card-img mt-3"
+                            alt="..."
+                            style={{
+                              borderRadius: "10px 25px",
+                              height: 150,
+                              width: 160,
+                            }}
+                          />
+                        </div>
+                        <div className="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title mb-0">
+                              dr. Erlina Burhan, M. Sc, SpP (K)
+                            </h5>
+                            <p class="card-text">
+                              <small class="text-muted">
+                                Juru Bicara RS Persahabatan
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              "Nah dengan mencuci tangan pakai sabun, virusnya
+                              akan mati. Cuci tangan dengan sabun itu efektif,
+                              mengapa? Karena virus itu dilapisi oleh lemak. Dan
+                              itu akan hancur bila bertemu dengan sabun dibawah
+                              air mengalir"
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <ul class="list-group mt-2">
+                  <li class="list-group-item active bg-info">
+                    Pencegahan Virus Corona
+                    <br />
+                    <small>Sumber Informasi: alodokter.com</small>
+                  </li>
+                  <li class="list-group-item">Mencuci tangan dengan benar</li>
+                  <li class="list-group-item">Menggunakan masker</li>
+                  <li class="list-group-item">Menjaga daya tahan tubuh</li>
+                  <li class="list-group-item">
+                    Tidak pergi ke negara terjangkit
+                  </li>
+                  <li class="list-group-item">
+                    Menghindari kontak dengan hewan yang berpotensi menularkan
+                    coronavirus
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </Fragment>
     );
   }

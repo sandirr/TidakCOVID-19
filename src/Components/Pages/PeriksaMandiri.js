@@ -226,7 +226,7 @@ export default class PeriksaMandiri extends React.Component {
                           style={{ textAlign: "center" }}
                         >
                           <img
-                            src="https://suaratani.com/wp-content/uploads/2020/03/DR.dr_.-Erlina-Burhan-MSc-Sp.PK-anggota-Tim-Medis-Covid-19-dan-Jubir-RS-Persahabatan-untuk-Covid-19.jpeg"
+                            src="https://awsimages.detik.net.id/visual/2019/11/09/f0b27ced-3544-4073-8ac9-8399a31634e8.png"
                             className="card-img mt-3"
                             alt="..."
                             style={{
@@ -239,19 +239,20 @@ export default class PeriksaMandiri extends React.Component {
                         <div className="col-md-8">
                           <div class="card-body">
                             <h5 class="card-title mb-0">
-                              dr. Erlina Burhan, M. Sc, SpP (K)
+                              Arya Mahendra Sinulingga
                             </h5>
                             <p class="card-text">
                               <small class="text-muted">
-                                Juru Bicara RS Persahabatan
+                                Staf Khusus Menteri BUMN
                               </small>
                             </p>
                             <p class="card-text">
-                              "Nah dengan mencuci tangan pakai sabun, virusnya
-                              akan mati. Cuci tangan dengan sabun itu efektif,
-                              mengapa? Karena virus itu dilapisi oleh lemak. Dan
-                              itu akan hancur bila bertemu dengan sabun dibawah
-                              air mengalir"
+                              "Harga (alatnya) enggak mahal, lebih murah
+                              daripada tes di rumah sakit. Kalau sudah ada tes
+                              ini, masalah bisa terselesaikan, meski ini bukan
+                              yang terakhir, masih ada tahap lainnya seperti tes
+                              laboratorium. Tapi paling enggak dengan (rapid
+                              test) ini, bisa tahu ada indikasi corona "
                             </p>
                           </div>
                         </div>

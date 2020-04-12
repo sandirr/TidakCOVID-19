@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import TopNav from "../Navs/TopNav";
 import Footer from "../Footer";
+import Sidebar from "../Sidebar";
 
 class Map_Statistik extends React.Component {
   constructor(props) {
@@ -182,25 +183,7 @@ class Map_Statistik extends React.Component {
                 </div>
               </div>
               <div className="col-lg-4">
-                <ul className="list-group mt-2">
-                  <li className="list-group-item active bg-info">
-                    Pencegahan Virus Corona
-                    <br />
-                    <small>Sumber Informasi: alodokter.com</small>
-                  </li>
-                  <li className="list-group-item">
-                    Mencuci tangan dengan benar
-                  </li>
-                  <li className="list-group-item">Menggunakan masker</li>
-                  <li className="list-group-item">Menjaga daya tahan tubuh</li>
-                  <li className="list-group-item">
-                    Tidak pergi ke negara terjangkit
-                  </li>
-                  <li className="list-group-item">
-                    Menghindari kontak dengan hewan yang berpotensi menularkan
-                    coronavirus
-                  </li>
-                </ul>
+                <Sidebar />
               </div>
             </div>
           </div>

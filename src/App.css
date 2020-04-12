@@ -91,6 +91,10 @@ html {
   cursor: pointer;
 }
 
+.sidebar .to-modal {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   body,
   html {

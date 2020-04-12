@@ -17,21 +17,24 @@ export default class TopNav extends React.Component {
       }
     });
   }
+  perubahan = () => {
+    if (window.pageYOffset <= 60) {
+      this.setState({ scroll: this.state.scroll ? false : true });
+    }
+  };
   render() {
     return (
       <nav
         className={
           this.state.scroll
-            ? "navbar navbar-expand-lg navbar-light fixed-top navscroll"
-            : "navbar navbar-expand-lg navbar-light fixed-top"
+            ? "navbar navbar-expand-lg navbar-dark fixed-top navscroll"
+            : "navbar navbar-expand-lg navbar-dark fixed-top"
         }
         id="navUtama"
       >
         <div className="container">
-          <Link className="navbar-brand bold" to="/">
-            <strong>NoCorona</strong>
-          </Link>
           <button
+            onClick={this.perubahan}
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -39,9 +42,13 @@ export default class TopNav extends React.Component {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ outline: "none", border: "none" }}
           >
-            <span className="navbar-toggler-icon"></span>
+            <i className="material-icons mobile-menu">menu</i>
           </button>
+          <Link className="navbar-brand bold" to="/">
+            <strong>TidakCOVID-19</strong>
+          </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li
@@ -57,13 +64,24 @@ export default class TopNav extends React.Component {
               </li>
               <li
                 className={
-                  this.props.active === "testmandiri"
+                  this.props.active === "tentang"
                     ? "nav-item active"
                     : "nav-item"
                 }
               >
-                <Link className="nav-link" to="/testmandiri">
-                  Test Mandiri
+                <Link className="nav-link" to="/">
+                  Tentang COVID-19
+                </Link>
+              </li>
+              <li
+                className={
+                  this.props.active === "periksamandiri"
+                    ? "nav-item active"
+                    : "nav-item"
+                }
+              >
+                <Link className="nav-link" to="/periksamandiri">
+                  Periksa Mandiri
                 </Link>
               </li>
               <li

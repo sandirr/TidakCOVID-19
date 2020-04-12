@@ -1,37 +1,75 @@
 body,
 html {
-  height: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
 .navscroll {
-  transition: 1s;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: .5s;
+  box-shadow: 0px 3px 5px #ccc;
   background: rgba(255, 255, 255, 0.9) !important;
 }
 
 #navUtama {
-  transition: 1s;
+  transition: .5s;
   background: transparent;
 }
 
 .navscroll .nav-link,
 .navscroll .navbar-brand {
-  transition: 1s;
+  transition: .5s;
   color: #000 !important;
 }
 
 #navUtama .nav-link,
 #navUtama .navbar-brand {
-  transition: 1s;
+  transition: .5s;
   color: #fff;
-  text-shadow: 1px 1px 3px #ccc;
+  text-shadow: 1px 1px 3px grey;
+}
+
+#navUtama .nav-item:hover .nav-link{
+  transition: .5s;
+  font-weight: bolder;
+  font-size: 1.1em !important;
 }
 
 #navUtama .nav-item.active .nav-link{
   font-weight: bolder;
-  text-shadow: 1px 1px 3px #17a2b8;
+  font-size: 1.1em !important;
+}
+
+.mobile-menu{
+  color: #fff;
+}
+
+.navscroll .mobile-menu{
+  color: #000;
+}
+
+.home-card{
+  transition: .5s;
+  border-radius: 15px;
+  height: 45vh;
+  box-shadow: 1px 1px 3px #ccc;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.skrining-card{
+  transition: .5s;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #ccc;
+  overflow: hidden;
+}
+
+.home-card .card-text{
+  font-size: 1.2em;
+}
+
+.home-card:hover{
+  transition: .5s;
+  box-shadow: -3px 3px 8px 2px #ccc;
 }
 
 @media (max-width: 768px) {

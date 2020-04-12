@@ -19,6 +19,7 @@ class Map_Statistik extends React.Component {
             top: 0,
             left: 0,
             right: 0,
+            height:'20vh',
             position: "fixed",
             zIndex: -1,
           }}

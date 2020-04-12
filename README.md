@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```
 git clone https://github.com/sandirr/TidakCOVID-19.git
-cd TidakCOVID19
+cd TidakCOVID-19
 npm install
 ```
 

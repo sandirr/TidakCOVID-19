@@ -19,7 +19,7 @@ class Map_Statistik extends React.Component {
             top: 0,
             left: 0,
             right: 0,
-            height:'20vh',
+            height: "20vh",
             position: "fixed",
             zIndex: -1,
           }}
@@ -57,13 +57,13 @@ class Map_Statistik extends React.Component {
               Lihat untuk {this.state.peta}
             </button>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center" }} className="container">
             <div className="collapse-id show">
               <object
                 title="Peta Penyebaran Corona Indonesia"
                 data="https://experience.arcgis.com/experience/57237ebe9c5b4b1caa1b93e79c920338"
                 style={{
-                  width: "90%",
+                  width: "100%",
                   height: "110vh",
                   border: "none",
                   overflow: "auto",
@@ -75,7 +75,7 @@ class Map_Statistik extends React.Component {
                 title="Peta Penyebaran Corona Dunia"
                 data="https://who.sprinklr.com/"
                 style={{
-                  width: "90%",
+                  width: "100%",
                   height: "110vh",
                   overflow: "auto",
                   border: "none",
@@ -89,6 +89,9 @@ class Map_Statistik extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
+                <div style={{ textAlign: "center" }}>
+                  <h3 style={{ fontWeight: "bold" }}>Kutipan</h3>
+                </div>
                 <div className="row">
                   <div className="col-lg-12 col-sm-12">
                     <div
@@ -112,14 +115,16 @@ class Map_Statistik extends React.Component {
                           />
                         </div>
                         <div className="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title mb-0">Ir. H. Joko Widodo</h5>
-                            <p class="card-text">
-                              <small class="text-muted">
+                          <div className="card-body">
+                            <h5 className="card-title mb-0">
+                              Ir. H. Joko Widodo
+                            </h5>
+                            <p className="card-text">
+                              <small className="text-muted">
                                 Presiden Indonesia
                               </small>
                             </p>
-                            <p class="card-text">
+                            <p className="card-text">
                               "Kebijakan belajar dari rumah, bekerja dari rumah,
                               dan ibadah di rumah perlu terus digencarkan untuk
                               mengurangi penyebaran Covid-19"
@@ -151,17 +156,17 @@ class Map_Statistik extends React.Component {
                             }}
                           />
                         </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title mb-0">
+                        <div className="col-md-8">
+                          <div className="card-body">
+                            <h5 className="card-title mb-0">
                               H. Anies Rasyid Baswedan, S.E., M.P.P., Ph.D
                             </h5>
-                            <p class="card-text mt-0">
-                              <small class="text-muted">
+                            <p className="card-text mt-0">
+                              <small className="text-muted">
                                 Gubernur DKI Jakarta
                               </small>
                             </p>
-                            <p class="card-text">
+                            <p className="card-text">
                               "(Data) 283 itu bukan angka statistik. Itu adalah
                               warga kita yang bulan lalu sehat. Yang bulan lalu
                               bisa berkegiatan. Mereka punya anak, mereka punya
@@ -176,19 +181,21 @@ class Map_Statistik extends React.Component {
                 </div>
               </div>
               <div className="col-lg-4">
-                <ul class="list-group mt-3">
-                  <li class="list-group-item active bg-info">
+                <ul className="list-group mt-2">
+                  <li className="list-group-item active bg-info">
                     Pencegahan Virus Corona
                     <br />
                     <small>Sumber Informasi: alodokter.com</small>
                   </li>
-                  <li class="list-group-item">Mencuci tangan dengan benar</li>
-                  <li class="list-group-item">Menggunakan masker</li>
-                  <li class="list-group-item">Menjaga daya tahan tubuh</li>
-                  <li class="list-group-item">
+                  <li className="list-group-item">
+                    Mencuci tangan dengan benar
+                  </li>
+                  <li className="list-group-item">Menggunakan masker</li>
+                  <li className="list-group-item">Menjaga daya tahan tubuh</li>
+                  <li className="list-group-item">
                     Tidak pergi ke negara terjangkit
                   </li>
-                  <li class="list-group-item">
+                  <li className="list-group-item">
                     Menghindari kontak dengan hewan yang berpotensi menularkan
                     coronavirus
                   </li>

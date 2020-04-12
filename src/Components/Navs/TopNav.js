@@ -69,7 +69,7 @@ export default class TopNav extends React.Component {
                     : "nav-item"
                 }
               >
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/tentang">
                   Tentang COVID-19
                 </Link>
               </li>
@@ -80,7 +80,7 @@ export default class TopNav extends React.Component {
                     : "nav-item"
                 }
               >
-                <Link className="nav-link" to="/periksamandiri">
+                <Link className="nav-link" to="/periksa-mandiri">
                   Periksa Mandiri
                 </Link>
               </li>
@@ -89,7 +89,7 @@ export default class TopNav extends React.Component {
                   this.props.active === "map" ? "nav-item active" : "nav-item"
                 }
               >
-                <Link className="nav-link" to="/map-statistik">
+                <Link className="nav-link" to="/peta-statistik">
                   Peta dan Statistik
                 </Link>
               </li>

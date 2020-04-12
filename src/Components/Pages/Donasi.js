@@ -1,20 +1,14 @@
 import React, { Fragment } from "react";
 import TopNav from "../Navs/TopNav";
 
-class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      peta: "Dunia",
-    };
-  }
+class Donasi extends React.Component {
   changePage = (page) => {
-    this.props.history.push(page);
+    window.open(page);
   };
   render() {
     return (
       <Fragment>
-        <TopNav active="beranda" />
+        <TopNav active="donasi" />
         <header
           className="masthead"
           style={{
@@ -35,10 +29,9 @@ class Home extends React.Component {
                   <h2
                     style={{
                       textShadow: "1px 1px 2px #ccc",
-                      fontWeight: "bold",
                     }}
                   >
-                    KATAKAN TIDAK PADA COVID-19
+                    Ayo Selamatkan Nyawa Sesama
                   </h2>
                 </div>
               </div>
@@ -50,93 +43,89 @@ class Home extends React.Component {
           <div className="container">
             <div className="row mt-3">
               <div className="col-sm-12 mb-4">
-                <h2 style={{ fontWeight: "bolder" }}>TANGGAP COVID-19</h2>
+                <h2 style={{ fontWeight: "bolder" }}>Bersama Lawan Corona</h2>
                 <p className="text-muted">
-                  Korban terus berjatuhan. Waspada dan tidak boleh panik. Tapi
-                  jangan meremehkan.
+                  Setiap pemberian pasti ada balasannya. Berikut rekomendasi
+                  situs donasi yang transparan.
                 </p>
               </div>
               <div className="col-lg-3 col-6 mb-4">
                 <div
-                  className="card text-center home-card"
-                  onClick={() => this.changePage("/tentang")}
+                  className="card text-center donate-card"
+                  onClick={() =>
+                    this.changePage(
+                      "https://kitabisa.com/campaign/indonesialawancorona"
+                    )
+                  }
                 >
                   <div className="card-body">
                     <img
-                      src="./img/know.png"
+                      src="https://kitabisa-userupload-01.s3-ap-southeast-1.amazonaws.com/_production/user/16084/23_16084_1541503323_775093_s.png"
                       alt="freepick_image"
-                      style={{ height: "5.2em", width: "5.2em" }}
+                      style={{
+                        height: "5.2em",
+                        width: "5.2em",
+                        borderRadius: "50%",
+                      }}
                     />
                     <h4 className="card-title" style={styles.ct}>
-                      Tentang COVID-19
+                      Kita Bisa
                     </h4>
-                    <p className="card-text">
-                      Terdapat banyak pertanyaan yang paling sering ditanyakan
-                      seputar virus corona. Berikut rangkumannya.
-                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-3 col-6 mb-4">
                 <div
-                  className="card text-center home-card"
-                  onClick={() => this.changePage("/periksa-mandiri")}
+                  className="card text-center donate-card"
+                  onClick={() =>
+                    this.changePage(
+                      "https://donasi.dompetdhuafa.org/bersamalawancorona/"
+                    )
+                  }
                 >
                   <div className="card-body">
                     <img
-                      src="./img/test.png"
+                      src="https://donasi.dompetdhuafa.org/wp-content/themes/donasidd/assets/img/logo-dd-with-text.png"
                       alt="freepick_image"
-                      style={{ height: "5.2em", width: "5.2em" }}
+                      style={{ height: "5.2em" }}
                     />
                     <h4 className="card-title" style={styles.ct}>
-                      Periksa Mandiri
+                      Dompet Dhuafa
                     </h4>
-                    <p className="card-text">
-                      Belum bisa melakukan rapid test, periksakan gejala yang
-                      Anda alami melalui self-assessment.
-                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-3 col-6 mb-4">
                 <div
-                  className="card text-center home-card"
-                  onClick={() => this.changePage("/peta-statistik")}
+                  className="card text-center donate-card"
+                  onClick={() => this.changePage("https://act.id/home/in")}
                 >
                   <div className="card-body">
                     <img
-                      src="./img/stat.png"
+                      src="https://act.id/assets/images/ACT-LOGO.svg"
                       alt="freepick_image"
-                      style={{ height: "5.2em", width: "5.2em" }}
+                      style={{ height: "5.2em", width: "90%" }}
                     />
                     <h4 className="card-title" style={styles.ct}>
-                      Peta dan Statistik
+                      Aksi Cepat Tanggap
                     </h4>
-                    <p className="card-text">
-                      Tampilan informasi peta dan statistik penyebaran virus
-                      corona di Indonesia dan Dunia.
-                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-3 col-6 mb-4">
                 <div
-                  className="card text-center home-card"
-                  onClick={() => this.changePage("/donasi")}
+                  className="card text-center donate-card"
+                  onClick={() => this.changePage("https://benihbaik.com/")}
                 >
                   <div className="card-body">
                     <img
-                      src="./img/donate.png"
+                      src="https://benihbaik.com/temanbaik/img/220xNxLogoWeb2.png.pagespeed.ic.jzjDf_Q-HW.webp"
                       alt="freepick_image"
-                      style={{ height: "5.2em", width: "5.2em" }}
+                      style={{ height: "5.2em", width: "90%" }}
                     />
                     <h4 className="card-title" style={styles.ct}>
-                      Donasi
+                      Benih Baik
                     </h4>
-                    <p className="card-text">
-                      Penyebaran virus corona di Indonesia terus meluas. Ayo
-                      selamatkan nyawa sesama.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -179,4 +168,4 @@ const styles = {
   },
 };
 
-export default Home;
+export default Donasi;

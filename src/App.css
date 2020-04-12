@@ -5,71 +5,90 @@ html {
 }
 
 .navscroll {
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: 0px 3px 5px #ccc;
   background: rgba(255, 255, 255, 0.9) !important;
 }
 
 #navUtama {
-  transition: .5s;
+  transition: 0.5s;
   background: transparent;
 }
 
 .navscroll .nav-link,
 .navscroll .navbar-brand {
-  transition: .5s;
+  transition: 0.5s;
   color: #000 !important;
 }
 
 #navUtama .nav-link,
 #navUtama .navbar-brand {
-  transition: .5s;
+  transition: 0.5s;
   color: #fff;
   text-shadow: 1px 1px 3px grey;
 }
 
-#navUtama .nav-item:hover .nav-link{
-  transition: .5s;
+#navUtama .nav-item:hover .nav-link {
+  transition: 0.5s;
   font-weight: bolder;
   font-size: 1.1em !important;
 }
 
-#navUtama .nav-item.active .nav-link{
+#navUtama .nav-item.active .nav-link {
   font-weight: bolder;
   font-size: 1.1em !important;
 }
 
-.mobile-menu{
+.mobile-menu {
   color: #fff;
 }
 
-.navscroll .mobile-menu{
+.navscroll .mobile-menu {
   color: #000;
 }
 
-.home-card{
-  transition: .5s;
+.home-card {
+  transition: 0.5s;
   border-radius: 15px;
-  height: 45vh;
+  min-height: 21em;
+  box-shadow: 1px 1px 3px #ccc;
+  cursor: pointer;
+  overflow: hidden;
+}
+.donate-card {
+  transition: 0.5s;
+  border-radius: 15px;
+  min-height: 11em;
   box-shadow: 1px 1px 3px #ccc;
   cursor: pointer;
   overflow: hidden;
 }
 
-.skrining-card{
-  transition: .5s;
-  border-radius: 15px;
-  box-shadow: 1px 1px 3px #ccc;
+.skrining-card {
+  transition: 0.5s;
+  border-radius: 15px !important;
+  box-shadow: 1px 1px 3px #ccc !important;
   overflow: hidden;
 }
 
-.home-card .card-text{
+.home-card .card-text,
+.donate-card .card-text {
   font-size: 1.2em;
 }
 
-.home-card:hover{
-  transition: .5s;
+.home-card:hover,
+.donate-card:hover {
+  transition: 0.5s;
   box-shadow: -3px 3px 8px 2px #ccc;
+}
+
+.tentang .btn {
+  text-transform: none !important;
+  font-weight: bold;
+}
+
+.linkmap p {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

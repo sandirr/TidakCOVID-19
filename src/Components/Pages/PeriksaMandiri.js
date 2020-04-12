@@ -18,6 +18,10 @@ export default class PeriksaMandiri extends React.Component {
     };
   }
 
+  reset = () => {
+    this.setState({ qNo: 0, total: 0, message: "", resultStatus: false });
+  };
+
   rekapGejala = (result) => {
     if (this.state.qNo < this.state.quetions.length - 1) {
       if (result === 1) {
@@ -35,8 +39,8 @@ export default class PeriksaMandiri extends React.Component {
       } else {
         let message = `Anda mengalami ${
           ((this.state.total + result) / 4) * 100
-        }% gejala virus corona. Lakukan Isolasi Diri.
-        Hubungi Puskemas terdekat atau call-center 112 atau 119`;
+        }% gejala virus corona. Lakukan isolasi diri.
+        Hubungi Puskemas terdekat atau call-center 119.`;
         this.setState({ message: message, resultStatus: true });
       }
     }
@@ -78,33 +82,40 @@ export default class PeriksaMandiri extends React.Component {
 
         <div
           className=""
-          style={{ marginTop: "18vh", paddingTop: "2vh", background: "#fff" }}
+          style={{
+            marginTop: "18vh",
+            paddingTop: "2vh",
+            background: "#fff",
+          }}
         >
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
-                <div class="card mt-3 skrining-card">
+                <div className="card mt-3 skrining-card">
                   <div
-                    class="card-header"
+                    className="card-header"
                     style={{
                       background: "#fff",
                       color: "#17a2b8",
                       fontWeight: "bold",
                     }}
                   >
-                    {this.state.resultStatus ? "Hasil" : "Skrining Gejala"}
+                    {this.state.resultStatus ? "Hasil" : "Periksa Gejala"}
                   </div>
-                  <ul class="list-group list-group-flush mt-2">
-                    <li class="list-group-item">
+                  <ul className="list-group list-group-flush mt-2">
+                    <li className="list-group-item">
                       <div>
                         {this.state.resultStatus ? (
                           <>
-                            {this.state.message} <br />
-                            {this.state.total < 2 ? (
-                              <div>
-                                <strong>Namun,</strong> virus corona bisa
+                            <div style={{ fontSize: "1.2em" }}>
+                              {this.state.message}
+                            </div>
+                            <br />
+                            {this.state.total >= 0 ? (
+                              <div className="mt-2">
+                                <strong>Ingat juga,</strong> virus corona bisa
                                 berdiam di tubuh seseorang tanpa disadari. Sebab
-                                tak semua yang terinfeksi virus SARS-CoV-2 ini
+                                tak semua yang terinfeksi COVID-19 ini
                                 menunjukkan gejala. <br />
                                 Praktekan pedoman hidup bersih dan sehat dengan
                                 cara :
@@ -164,35 +175,23 @@ export default class PeriksaMandiri extends React.Component {
                         {this.state.resultStatus ? (
                           <button
                             className="btn btn-info btn-sm mr-2"
-                            style={{
-                              textTransform: "none",
-                              width: "80px",
-                              outline: "none",
-                            }}
-                            onClick={() => this.goBeranda()}
+                            style={styles.button}
+                            onClick={() => this.reset()}
                           >
-                            Beranda
+                            Lagi
                           </button>
                         ) : (
                           <>
                             <button
                               className="btn btn-info btn-sm mr-2"
-                              style={{
-                                textTransform: "none",
-                                width: "80px",
-                                outline: "none",
-                              }}
+                              style={styles.button}
                               onClick={() => this.rekapGejala(0)}
                             >
                               Tidak
                             </button>
                             <button
                               className="btn btn-info btn-sm ml-2"
-                              style={{
-                                textTransform: "none",
-                                width: "80px",
-                                outline: "none",
-                              }}
+                              style={styles.button}
                               onClick={() => this.rekapGejala(1)}
                             >
                               Ya
@@ -207,7 +206,91 @@ export default class PeriksaMandiri extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className="bg-light py-4 mt-4">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8">
+                <div style={{ textAlign: "center" }}>
+                  <h3 style={{ fontWeight: "bold" }}>Kutipan</h3>
+                </div>
+                <div className="row">
+                  <div className="col-lg-12 col-sm-12">
+                    <div
+                      className="card mb-3 bg-light"
+                      style={{ border: "none" }}
+                    >
+                      <div className="row no-gutters">
+                        <div
+                          className="col-md-3"
+                          style={{ textAlign: "center" }}
+                        >
+                          <img
+                            src="https://suaratani.com/wp-content/uploads/2020/03/DR.dr_.-Erlina-Burhan-MSc-Sp.PK-anggota-Tim-Medis-Covid-19-dan-Jubir-RS-Persahabatan-untuk-Covid-19.jpeg"
+                            className="card-img mt-3"
+                            alt="..."
+                            style={{
+                              borderRadius: "10px 25px",
+                              height: 150,
+                              width: 160,
+                            }}
+                          />
+                        </div>
+                        <div className="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title mb-0">
+                              dr. Erlina Burhan, M. Sc, SpP (K)
+                            </h5>
+                            <p class="card-text">
+                              <small class="text-muted">
+                                Juru Bicara RS Persahabatan
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              "Nah dengan mencuci tangan pakai sabun, virusnya
+                              akan mati. Cuci tangan dengan sabun itu efektif,
+                              mengapa? Karena virus itu dilapisi oleh lemak. Dan
+                              itu akan hancur bila bertemu dengan sabun dibawah
+                              air mengalir"
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <ul class="list-group mt-2">
+                  <li class="list-group-item active bg-info">
+                    Pencegahan Virus Corona
+                    <br />
+                    <small>Sumber Informasi: alodokter.com</small>
+                  </li>
+                  <li class="list-group-item">Mencuci tangan dengan benar</li>
+                  <li class="list-group-item">Menggunakan masker</li>
+                  <li class="list-group-item">Menjaga daya tahan tubuh</li>
+                  <li class="list-group-item">
+                    Tidak pergi ke negara terjangkit
+                  </li>
+                  <li class="list-group-item">
+                    Menghindari kontak dengan hewan yang berpotensi menularkan
+                    coronavirus
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </Fragment>
     );
   }
 }
+
+const styles = {
+  button: {
+    textTransform: "none",
+    width: "80px",
+    outline: "none",
+  },
+};

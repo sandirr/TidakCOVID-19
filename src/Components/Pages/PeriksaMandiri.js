@@ -83,13 +83,13 @@ export default class PeriksaMandiri extends React.Component {
         </header>
 
         <div
-          className=""
           style={{
             marginTop: "18vh",
             paddingTop: "2vh",
             paddingBottom: "2vh",
             background: "#fff",
           }}
+          className="mobile-back"
         >
           <div className="container">
             <div className="row">

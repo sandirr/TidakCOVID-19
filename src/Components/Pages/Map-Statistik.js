@@ -32,7 +32,7 @@ class Map_Statistik extends React.Component {
               <div className="col-lg-8 col-md-10 mx-auto">
                 <div className="site-heading">
                   <h2 style={{ textShadow: "1px 1px 2px #ccc" }}>
-                    Peta dan Statistik Kasus Virus Corona di{" "}
+                    Kasus Virus Corona di{" "}
                     {this.state.peta === "Dunia" ? "Indonesia" : "Dunia"}
                   </h2>
                 </div>
@@ -43,6 +43,7 @@ class Map_Statistik extends React.Component {
 
         <div
           style={{ marginTop: "18vh", background: "#fff", paddingTop: "2vh" }}
+          className="mobile-back"
         >
           <div style={{ textAlign: "center" }}>
             <button

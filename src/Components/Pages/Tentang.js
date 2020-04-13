@@ -50,7 +50,7 @@ export default class Tentang extends React.Component {
             background: "#fff",
             paddingBottom: "2vh",
           }}
-          className="tentang"
+          className="mobile-back tentang"
         >
           <div className="container">
             <div className="accordion skrining-card mb-3" id="accordionExample">

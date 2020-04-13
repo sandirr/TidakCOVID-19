@@ -10,7 +10,7 @@ export default class TopNav extends React.Component {
   }
   componentDidMount() {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 60) {
+      if (window.pageYOffset > 90) {
         this.setState({ scroll: true });
       } else {
         this.setState({ scroll: false });
@@ -18,7 +18,7 @@ export default class TopNav extends React.Component {
     });
   }
   perubahan = () => {
-    if (window.pageYOffset <= 60) {
+    if (window.pageYOffset <= 90) {
       this.setState({ scroll: this.state.scroll ? false : true });
     }
   };

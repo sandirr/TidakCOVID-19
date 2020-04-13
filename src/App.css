@@ -95,9 +95,13 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   body,
   html {
     font-size: 12px;
+  }
+
+  .mobile-back {
+    margin-top: 13vh !important;
   }
 }

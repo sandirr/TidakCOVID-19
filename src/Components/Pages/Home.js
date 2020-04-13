@@ -47,7 +47,7 @@ class Home extends React.Component {
           </div>
         </header>
 
-        <div style={styles.container}>
+        <div style={styles.container} className="mobile-back">
           <div className="container">
             <div className="row mt-3">
               <div className="col-sm-12 mb-4">
